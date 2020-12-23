@@ -1,0 +1,26 @@
+<head> 
+    <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity= 
+"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous"> 
+  
+    <style> 
+        .jumbotron-image { 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+        } 
+    </style> 
+</head> 
+
+<div class="jumbotron text-black jumbotron-image shadow">
+  <h1 class="display-4">{{stock.companyName}} ({{stock.symbol}})</h1>
+  <strong>Latest Price: </strong>{{stock.latestPrice}}<br/>
+  <strong>Previous Close: </strong>{{stock.previousClose}}<br/>
+  <strong>Percent Change: </strong>{{stock.changePercent}}<br/>
+  <strong>Market Cap: </strong>{{stock.marketCap}}<br/>
+  <strong>YTD Change: </strong>{{stock.ytdChange}}<br/>
+  <strong>52wk High: </strong>{{stock.week52High}}<br/>
+  <strong>52wk Low: </strong>{{stock.week52Low}}<br/>
+</div>
